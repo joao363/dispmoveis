@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
                 edtSalarioLiquido.setText(""+liquido);
             }
             if(cbQuinze.isChecked()){
+
                 bruto = hrs * valor;
                 desconto = bruto / 15;
                 ValorDescontar = desconto ;
