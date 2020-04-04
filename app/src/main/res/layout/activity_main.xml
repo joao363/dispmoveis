@@ -4,8 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="#FFFFFF"
     android:padding="10px"
-    tools:context=".MainActivity">
+    tools:context="CalculoSalario.MainActivity">
 
     <TextView
         android:id="@+id/textView"
@@ -82,7 +84,7 @@
         android:layout_marginTop="16dp"
         android:text="Percentual de Desconto:"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintHorizontal_bias="0.073"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtValorHrsTrabalhada" />
 
@@ -92,6 +94,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
         android:onClick="btnCalcular"
         android:text="Calcular"
         app:layout_constraintEnd_toEndOf="parent"
@@ -105,6 +108,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
         android:text="Salário Bruto:"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.116"
@@ -177,13 +181,13 @@
         android:id="@+id/cbDez"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginLeft="52dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
         android:text="10%"
         app:layout_constraintBottom_toTopOf="@+id/btnCalcular"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.444" />
 
     <CheckBox
         android:id="@+id/cbQuinze"
