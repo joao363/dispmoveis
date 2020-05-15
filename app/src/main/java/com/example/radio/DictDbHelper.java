@@ -9,7 +9,7 @@ import androidx.annotation.Nullable;
 public class DictDbHelper extends SQLiteOpenHelper {
 
     private static final String NOME_BANCO = "dicionario.db";
-    private static final int VERSAO_BANCO = 1;
+    private static final int VERSAO_BANCO = 2;
 
     public DictDbHelper(Context context){
         super(context, NOME_BANCO, null, VERSAO_BANCO);
@@ -17,10 +17,10 @@ public class DictDbHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String sql = "CREATE TABLE" + DictDbContract.DictEntry.NOME_TABELA
-                + " (" + DictDbContract.DictEntry._ID + "INTEGER PRIMARY KEY, "
-                + DictDbContract.DictEntry.COLUNA_PALAVRA + "TEXT,"
-                + DictDbContract.DictEntry.COLUNA_SINONIMO + "text)";
+        String sql = "CREATE TABLE " + DictDbContract.DictEntry.NOME_TABELA
+                + " ( " + DictDbContract.DictEntry._ID + " INTEGER PRIMARY KEY, "
+                + DictDbContract.DictEntry.COLUNA_PALAVRA + " TEXT ,"
+                + DictDbContract.DictEntry.COLUNA_SINONIMO + " TEXT )";
 
         db.execSQL(sql);
     }
